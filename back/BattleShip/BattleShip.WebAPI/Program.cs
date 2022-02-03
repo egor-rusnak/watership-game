@@ -15,7 +15,7 @@ namespace BattleShip.WebAPI
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseUrls("http://*:5050");
+                    webBuilder.UseUrls("http://localhost:5050");
                 });
     }
 }

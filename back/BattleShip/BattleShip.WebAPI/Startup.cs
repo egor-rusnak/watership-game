@@ -20,7 +20,7 @@ namespace BattleShip.WebAPI
 
             if (env.IsDevelopment())
             {
-                configurationBuilder.AddUserSecrets<Startup>(true);
+                configurationBuilder.AddUserSecrets<Startup>(optional: true);
             }
 
             Configuration = configurationBuilder.Build();
