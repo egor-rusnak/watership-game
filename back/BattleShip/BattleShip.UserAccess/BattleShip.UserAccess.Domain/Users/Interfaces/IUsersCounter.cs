@@ -1,4 +1,4 @@
-﻿namespace BattleShip.UserAccess.Domain.User
+﻿namespace BattleShip.UserAccess.Domain.Users.Interfaces
 {
     public interface IUsersCounter
     {

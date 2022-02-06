@@ -1,6 +1,7 @@
-﻿using BuildingBlocks.Domain;
+﻿using BattleShip.UserAccess.Domain.Users.Interfaces;
+using BuildingBlocks.Domain;
 
-namespace BattleShip.UserAccess.Domain.User.Rules
+namespace BattleShip.UserAccess.Domain.Users.Rules
 {
     public class UserEmailMustBeUniqueBusinessRule : IBusinessRule
     {

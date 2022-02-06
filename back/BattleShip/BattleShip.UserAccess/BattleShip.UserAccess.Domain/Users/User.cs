@@ -1,7 +1,8 @@
 ﻿using BuildingBlocks.Domain;
-using BattleShip.UserAccess.Domain.User.Rules;
+using BattleShip.UserAccess.Domain.Users.Rules;
+using BattleShip.UserAccess.Domain.Users.Interfaces;
 
-namespace BattleShip.UserAccess.Domain.User
+namespace BattleShip.UserAccess.Domain.Users
 {
     public class User : Entity
     {
@@ -17,7 +18,7 @@ namespace BattleShip.UserAccess.Domain.User
 
         private User() { }
 
-        internal static User CreateUser(string login, string password, string email, string name, IUsersCounter usersCounter)
+        public static User CreateUser(string login, string password, string email, string name, IUsersCounter usersCounter)
         {
             return new User(login, password, email, name, usersCounter);
         }

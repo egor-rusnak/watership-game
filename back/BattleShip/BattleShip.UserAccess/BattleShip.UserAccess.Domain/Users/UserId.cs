@@ -1,6 +1,6 @@
 ﻿using BuildingBlocks.Domain;
 
-namespace BattleShip.UserAccess.Domain.User
+namespace BattleShip.UserAccess.Domain.Users
 {
     public class UserId : TypedIdValueBase
     {
